@@ -155,7 +155,7 @@
 
         <div class="why-grid" role="list">
           <div class="why-item" role="listitem">
-            <img src="./assets/trust_icon.png" alt="Handmade & sustainable practices" class="why-icon" />
+            <img src="./assets/hand_made_icon.png" alt="Handmade & sustainable practices" class="why-icon" />
             <div class="why-name">Handmade & sustainable practices</div>
           </div>
 
@@ -165,12 +165,12 @@
           </div>
 
           <div class="why-item" role="listitem">
-            <img src="./assets/trust_icon.png" alt="Handmade & sustainable practices" class="why-icon" />
+            <img src="./assets/puzzle_icon.png" alt="Handmade & sustainable practices" class="why-icon" />
             <div class="why-name">Blending creativity with mindfulness</div>
           </div>
 
           <div class="why-item" role="listitem">
-            <img src="./assets/trust_icon.png" alt="Handmade & sustainable practices" class="why-icon" />
+            <img src="./assets/artisan_logo.png" alt="Handmade & sustainable practices" class="why-icon" />
             <div class="why-name">Led by artisan & facilitator</div>
           </div>
         </div>
@@ -185,39 +185,19 @@
         </div>
 
         <div class="world-tabs" role="tablist">
-          <button class="world-tab is-active" aria-selected="true">
-            <span class="tab-icon grid-icon" aria-hidden="true"></span>
-            <span class="sr-only">Posts</span>
+          <button class="world-tab is-active" aria-selected="true" data-tab="posts">
+            <img class="insta-icon" src="./assets/image-grid.png" alt="insta grid">
           </button>
-          <button class="world-tab" aria-selected="false">
-            <span class="tab-icon film-icon" aria-hidden="true"></span>
-            <span class="sr-only">Reels</span>
+          <button class="world-tab" aria-selected="false" data-tab="reels">
+            <img class="insta-icon" src="./assets/reel.png" alt="insta reels">
           </button>
-          <button class="world-tab" aria-selected="false">
-            <span class="tab-icon photo-icon" aria-hidden="true"></span>
-            <span class="sr-only">Tagged</span>
+          <button class="world-tab" aria-selected="false" data-tab="tagged">
+            <img class="insta-icon" src="./assets/tagged.png" alt="insta tagged">
           </button>
         </div>
 
-        <div class="world-grid">
-          <a href="#" class="world-item">
-            <img src="https://via.placeholder.com/300" alt="Instagram post" />
-          </a>
-          <a href="#" class="world-item">
-            <img src="https://via.placeholder.com/300" alt="Instagram post" />
-          </a>
-          <a href="#" class="world-item">
-            <img src="https://via.placeholder.com/300" alt="Instagram post" />
-          </a>
-          <a href="#" class="world-item">
-            <img src="https://via.placeholder.com/300" alt="Instagram post" />
-          </a>
-          <a href="#" class="world-item">
-            <img src="https://via.placeholder.com/300" alt="Instagram post" />
-          </a>
-          <a href="#" class="world-item">
-            <img src="https://via.placeholder.com/300" alt="Instagram post" />
-          </a>
+        <div class="world-grid" id="world-grid" aria-live="polite">
+          <!-- JS will populate images for the active tab -->
         </div>
       </div>
     </section>
@@ -276,7 +256,7 @@
         <img src="./assets/insy_logo.png" alt="Insy's Artistry logo" class="footer-logo" />
         <p class="footer-copy">© All Rights Reserved 2025</p>
       </div>
-    
+
       <div class="footer-columns">
         <div class="footer-col">
           <h3 class="footer-heading">Main</h3>
@@ -289,7 +269,7 @@
             <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
-    
+
         <div class="footer-col">
           <h3 class="footer-heading">Legal Policies</h3>
           <ul class="footer-links">
@@ -298,7 +278,7 @@
             <li><a href="#">Refund &amp; Cancellation Policy</a></li>
           </ul>
         </div>
-    
+
         <div class="footer-col">
           <h3 class="footer-heading">Social Links</h3>
           <ul class="footer-links">
@@ -308,8 +288,8 @@
           </ul>
         </div>
       </div>
-    
-    
+
+
     </div>
   </footer>
 
