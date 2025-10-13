@@ -400,6 +400,62 @@ body {
   font-size: 14px;
 }
 
+/* Craft Journey CTA */
+.craft-cta {
+  position: relative;
+  overflow: hidden;
+  padding: 90px 0;
+  color: #fff;
+}
+
+.craft-cta-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(24, 15, 12, 0.72), rgba(24, 15, 12, 0.32)),
+    url("./assets/craft_section_pic.png") center/cover no-repeat;
+}
+
+.craft-cta-inner {
+  position: relative;
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.craft-cta-title {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.craft-cta-script {
+  font-family: "Amsterdam", "Great Vibes", cursive;
+  font-size: 48px;
+  color: #ff48b0;
+}
+
+.craft-cta-desc {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 28px;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.craft-cta-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 1.5px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.craft-cta-btn:hover {
+  background: #fff;
+  color: #1f2937;
+}
 /* small helpers */
 .sr-only {
   position: absolute !important;
@@ -509,6 +565,18 @@ body {
   .cta-form input[type="email"] {
     min-width: 100%;
   }
+.craft-cta {
+  padding: 70px 0;
+}
+
+.craft-cta-title {
+  font-size: 32px;
+}
+
+.craft-cta-script {
+  font-size: 40px;
+  display: block;
+}
 }
 
 /* World section */
