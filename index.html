@@ -1,91 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Insy's Artistry — Handcrafted Artistry</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&family=Great+Vibes&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <div class="brand">
-          <a href="#">
-            <img
-              src="./assets/insy_logo.png"
-              alt="Insy's Artistry logo"
-              class="logo"
-            />
-          </a>
-        </div>
 
-        <nav class="main-nav" aria-label="Main navigation">
-          <ul>
-            <li><a href="#">Shop Products</a></li>
-            <li><a href="#">Workshops</a></li>
-            <li><a href="#">About Us</a></li>
-          </ul>
-        </nav>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Insy's Artistry — Handcrafted Artistry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&family=Great+Vibes&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-        <div class="header-actions">
-          <button class="icon-btn" aria-label="Search">🔍</button>
-          <button class="icon-btn" aria-label="Account">👤</button>
-          <button class="icon-btn" aria-label="Cart">🛒</button>
-          <button class="menu-toggle" aria-label="Open menu">☰</button>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#">
+          <img src="./assets/insy_logo.png" alt="Insy's Artistry logo" class="logo" />
+        </a>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#">Shop Products</a></li>
+          <li><a href="#">Workshops</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="Search">🔍</button>
+        <button class="icon-btn" aria-label="Account">👤</button>
+        <button class="icon-btn" aria-label="Cart">🛒</button>
+        <button class="menu-toggle" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h2 class="hero-sub">Handcrafted Artistry</h2>
+          <h1 class="hero-title">For Every Space</h1>
+          <p class="hero-lead">
+            Transform your world with unique, soulful creations
+          </p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#shop">Shop Products</a>
+            <a class="btn btn-secondary" href="#quiz">Book Workshops</a>
+          </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section class="hero" id="hero">
-        <div class="hero-bg" aria-hidden="true"></div>
-        <div class="container hero-inner">
-          <div class="hero-copy">
-            <h2 class="hero-sub">Handcrafted Artistry</h2>
-            <h1 class="hero-title">For Every Space</h1>
-            <p class="hero-lead">
-              Transform your world with unique, soulful creations
-            </p>
-            <div class="hero-ctas">
-              <a class="btn btn-primary" href="#shop">Shop Products</a>
-              <a class="btn btn-secondary" href="#quiz">Book Workshops</a>
+    <section class="quiz" id="quiz">
+      <div class="container quiz-inner">
+        <div class="quiz-content">
+          <h2 class="quiz-title">
+            Take <span class="quiz-eyebrow">A Quick Quiz</span> To Find Your
+            Stress And Creativity Type
+          </h2>
+          <p class="quiz-desc">
+            3-minute quiz to identify your stress & creativity profiles. Get a
+            tailored guide in your inbox.
+          </p>
+          <a href="#" class="btn btn-primary quiz-cta">Take the Quiz</a>
+        </div>
+        <div class="quiz-image">
+          <img src="./assets//quiz_page_pic.png" alt="Workshop image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Product showcase section -->
+    <section class="products" id="shop">
+      <div class="container">
+        <h2 class="products-title">Handmade Décor For Inspired Living.</h2>
+        <p class="products-lead">
+          Discover timeless pieces that add warmth, color, and character to
+          your home. Thoughtfully crafted and made to last.
+        </p>
+
+        <div class="product-grid" aria-live="polite">
+          <article class="product-card">
+            <div class="product-image">
+              <img src="./assets/product_pic_1.png" alt="Ink Plates" />
             </div>
+            <div class="product-meta">
+              <div class="product-name">Ink Plates</div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="./assets/product_pic_2.png" alt="Mosaic Cup Holders" />
+            </div>
+            <div class="product-meta">
+              <div class="product-name">Mosaic Cup Holders</div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="./assets/product_pic_3.png" alt="Mosaic Plates" />
+            </div>
+            <div class="product-meta">
+              <div class="product-name">Mosaic Plates</div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="./assets/product_pic_4.png" alt="Season Cups" />
+            </div>
+            <div class="product-meta">
+              <div class="product-name">Season Cups</div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 28px">
+          <a class="btn btn-secondary explore-btn" href="#">Explore Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workshops section (inserted before Why Choose) -->
+    <section class="workshops" id="workshops">
+      <div class="container quiz-inner">
+        <div class="quiz-content">
+          <h2 class="quiz-title">Workshops That Build More Than Skills.</h2>
+          <p class="quiz-desc">
+            Our corporate workshops use craft as a tool for wellness, stress
+            relief, and collaboration. Whether in the office or virtually, we
+            help teams slow down, connect, and create together.
+          </p>
+          <a class="btn btn-secondary" href="#workshops">Explore Workshops</a>
+        </div>
+
+        <div class="quiz-image">
+          <img src="./assets/workshop_page_pic.png" alt="Workshop group" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Why choose section -->
+    <section class="why" id="why">
+      <div class="container">
+        <h2 class="why-title">Why Choose Insy's</h2>
+
+        <div class="why-grid" role="list">
+          <div class="why-item" role="listitem">
+            <img src="./assets/trust_icon.png" alt="Handmade & sustainable practices" class="why-icon" />
+            <div class="why-name">Handmade & sustainable practices</div>
+          </div>
+
+          <div class="why-item" role="listitem">
+            <img src="./assets/trust_icon.png" alt="Handmade & sustainable practices" class="why-icon" />
+            <div class="why-name">Trusted by homeowners & teams</div>
+          </div>
+
+          <div class="why-item" role="listitem">
+            <img src="./assets/trust_icon.png" alt="Handmade & sustainable practices" class="why-icon" />
+            <div class="why-name">Blending creativity with mindfulness</div>
+          </div>
+
+          <div class="why-item" role="listitem">
+            <img src="./assets/trust_icon.png" alt="Handmade & sustainable practices" class="why-icon" />
+            <div class="why-name">Led by artisan & facilitator</div>
           </div>
         </div>
-      </section>
-
-      <section class="quiz" id="quiz">
-        <div class="container quiz-inner">
-          <div class="quiz-content">
-            <h2 class="quiz-title">
-              Take A Quick Quiz To Find Your Stress And Creativity Type
-            </h2>
-            <p class="quiz-desc">
-              3-minute quiz to identify your stress & creativity profiles. Get a
-              tailored guide in your inbox.
-            </p>
-            <a href="#" class="btn btn-primary quiz-cta">Take the Quiz</a>
-          </div>
-          <div class="quiz-image">
-            <img
-              src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=000"
-              alt="Workshop image"
-            />
-          </div>
+      </div>
+    </section>
+    <!-- world section -->
+    <section class="world" id="world">
+      <div class="container">
+        <h2 class="world-title">From Our Studio To Your World.</h2>
+        <div style="text-align: center; margin-bottom: 28px">
+          <a class="btn btn-secondary explore-btn" href="#">Follow Us</a>
         </div>
-      </section>
-    </main>
 
-    <footer class="site-footer">
-      <div class="container">© 2025 Insy's Artistry</div>
-    </footer>
+        <div class="world-tabs" role="tablist">
+          <button class="world-tab is-active" aria-selected="true">
+            <span class="tab-icon grid-icon" aria-hidden="true"></span>
+            <span class="sr-only">Posts</span>
+          </button>
+          <button class="world-tab" aria-selected="false">
+            <span class="tab-icon film-icon" aria-hidden="true"></span>
+            <span class="sr-only">Reels</span>
+          </button>
+          <button class="world-tab" aria-selected="false">
+            <span class="tab-icon photo-icon" aria-hidden="true"></span>
+            <span class="sr-only">Tagged</span>
+          </button>
+        </div>
 
-    <script src="script.js"></script>
-  </body>
+        <div class="world-grid">
+          <a href="#" class="world-item">
+            <img src="https://via.placeholder.com/300" alt="Instagram post" />
+          </a>
+          <a href="#" class="world-item">
+            <img src="https://via.placeholder.com/300" alt="Instagram post" />
+          </a>
+          <a href="#" class="world-item">
+            <img src="https://via.placeholder.com/300" alt="Instagram post" />
+          </a>
+          <a href="#" class="world-item">
+            <img src="https://via.placeholder.com/300" alt="Instagram post" />
+          </a>
+          <a href="#" class="world-item">
+            <img src="https://via.placeholder.com/300" alt="Instagram post" />
+          </a>
+          <a href="#" class="world-item">
+            <img src="https://via.placeholder.com/300" alt="Instagram post" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Philosophy section -->
+    <section class="philosophy">
+      <div class="container philosophy-inner">
+        <p class="philosophy-text">
+          Over the years, I have worked on several workshops that brought to light my expertise in not only teaching
+          children but also adults. Creativity is at the core of all the workshops I conduct, with a belief that no two
+          pieces should look the same… rather, each piece should reflect the individuality of the artist.
+        </p>
+        <p class="philosophy-signoff">Perfection is overrated!</p>
+        <a class="philosophy-link" href="#">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Newsletter / CTA -->
+    <section class="cta-newsletter">
+      <div class="container cta-inner">
+        <div class="cta-copy">
+          <h3 class="cta-title">Get exclusive updates & workshop invites</h3>
+          <p class="cta-desc">
+            Join our list for new product drops, early workshop seats, and
+            maker stories.
+          </p>
+        </div>
+        <form class="cta-form" action="#" method="post" aria-label="Join newsletter">
+          <label for="email" class="sr-only">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          <button class="btn btn-primary" type="submit">Join the List</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 Insy's Artistry</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
