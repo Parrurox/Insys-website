@@ -46,6 +46,7 @@ body {
 .header-inner {
   display: flex;
   align-items: center;
+  gap: 20px;
   justify-content: space-between;
   height: 76px;
 }
@@ -559,204 +560,7 @@ body {
   color: #111827;
 }
 
-/* responsive */
-@media (max-width: 900px) {
-  .footer-inner {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 32px;
-  }
 
-  .footer-brand {
-    max-width: 100%;
-  }
-
-  .footer-columns {
-    flex-direction: column;
-    gap: 24px;
-    width: 100%;
-  }
-
-  .header-inner {
-    position: relative;
-  }
-
-  .menu-toggle {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    background: transparent;
-    /* ensure no orange on small screens */
-    color: #111827;
-    border: none;
-    padding: 8px;
-  }
-
-  .logo-menu-section {
-    display: flex;
-    align-items: start;
-  }
-
-  /* hide desktop nav by default on small screens */
-  .main-nav {
-    display: none;
-  }
-
-  /* show when opened — anchor to left so menu appears near hamburger */
-  .main-nav.is-open {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    position: absolute;
-    top: 76px;
-    left: 20px;
-    right: auto;
-    width: min(320px, calc(100% - 40px));
-    /* compact left panel */
-    background: #fff;
-    padding: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    border-radius: 8px;
-    z-index: 50;
-  }
-
-  .main-nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .main-nav a {
-    padding: 8px 6px;
-    display: block;
-  }
-
-  /* make header actions compact */
-  .header-actions {
-    gap: 8px;
-  }
-}
-
-@media (max-width: 900px) {
-  .hero-copy {
-    white-space: normal;
-  }
-
-  .hero-sub {
-    font-size: 40px;
-    display: block;
-    margin-bottom: 6px;
-  }
-
-  .hero-title {
-    display: block;
-    font-size: 44px;
-    margin-top: 6px;
-  }
-
-  .footer-inner {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-columns {
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  .footer-avatar {
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 780px) {
-  .quiz-inner {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
-  .quiz-image img {
-    height: auto;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 720px) {
-  .hero-copy {
-    white-space: normal;
-  }
-
-  .hero-sub {
-    font-size: 36px;
-    display: block;
-    margin-bottom: 6px;
-  }
-
-  .hero-title {
-    display: block;
-    font-size: 34px;
-    margin-top: 6px;
-  }
-}
-
-@media (max-width: 1100px) {
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 900px) {
-  .why-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .cta-inner {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .cta-form {
-    justify-content: center;
-    width: 100%;
-  }
-}
-
-@media (max-width: 640px) {
-  .product-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .products {
-    padding: 40px 0;
-  }
-
-  .products-title {
-    font-size: 28px;
-  }
-
-  .cta-form input[type="email"] {
-    min-width: 100%;
-  }
-
-  .craft-cta {
-    padding: 70px 0;
-  }
-
-  .craft-cta-title {
-    font-size: 32px;
-  }
-
-  .craft-cta-script {
-    font-size: 40px;
-    display: block;
-  }
-}
 
 /* World section */
 .world {
@@ -893,8 +697,141 @@ body {
   height: 24px;
 }
 
-/* responsive adjustments */
+
+/*==================== responsive ness==============*/
+@media (max-width: 1100px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 900px) {
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .footer-brand {
+    max-width: 100%;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .header-inner {
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background: transparent;
+    /* ensure no orange on small screens */
+    color: #111827;
+    border: none;
+    padding: 8px;
+  }
+
+  .logo-menu-section {
+    display: flex;
+    align-items: start;
+  }
+
+  /* hide desktop nav by default on small screens */
+  .main-nav {
+    display: none;
+  }
+
+  /* show when opened — anchor to left so menu appears near hamburger */
+  .main-nav.is-open {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: absolute;
+    top: 76px;
+    left: 20px;
+    right: auto;
+    width: min(320px, calc(100% - 40px));
+    /* compact left panel */
+    background: #fff;
+    padding: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    z-index: 50;
+  }
+
+  .main-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-nav a {
+    padding: 8px 6px;
+    display: block;
+  }
+
+  /* make header actions compact */
+  .header-actions {
+    gap: 8px;
+  }
+
+  .hero-copy {
+    white-space: normal;
+  }
+
+  .hero-sub {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .hero-title {
+    display: block;
+    font-size: 44px;
+    margin-top: 6px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .footer-avatar {
+    margin-left: 0;
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-form {
+    justify-content: center;
+    width: 100%;
+  }
+
   .world-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -903,7 +840,76 @@ body {
     height: 240px;
     /* reduced from 280 */
   }
+
 }
+
+@media (max-width: 780px) {
+  .quiz-inner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .quiz-image img {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+
+
+@media (max-width: 720px) {
+  .hero-copy {
+    white-space: normal;
+  }
+
+  .hero-sub {
+    font-size: 36px;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .hero-title {
+    display: block;
+    font-size: 34px;
+    margin-top: 6px;
+  }
+}
+
+
+
+
+
+@media (max-width: 640px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .products {
+    padding: 40px 0;
+  }
+
+  .products-title {
+    font-size: 28px;
+  }
+
+  .cta-form input[type="email"] {
+    min-width: 100%;
+  }
+
+  .craft-cta {
+    padding: 70px 0;
+  }
+
+  .craft-cta-title {
+    font-size: 32px;
+  }
+
+  .craft-cta-script {
+    font-size: 40px;
+    display: block;
+  }
+}
+
 
 @media (max-width: 540px) {
   .world-grid {
