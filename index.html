@@ -16,10 +16,14 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <div class="brand">
-        <a href="#">
-          <img src="./assets/insy_logo.png" alt="Insy's Artistry logo" class="logo" />
-        </a>
+      <div class="logo-menu-section">
+        <!-- moved hamburger to the left of the logo -->
+        <button class="menu-toggle" aria-label="Open menu"><img src="./assets/mobile_menu.png" alt="menu"></button>
+        <div class="brand">
+          <a href="#">
+            <img src="./assets/insy_logo.png" alt="Insy's Artistry logo" class="logo" />
+          </a>
+        </div>
       </div>
 
       <nav class="main-nav" aria-label="Main navigation">
@@ -37,7 +41,6 @@
             width="24px"></button>
         <button class="icon-btn" aria-label="Cart"><img src="./assets/shopping_icon.png" alt="search_icon" height="24px"
             width="24px"></button>
-        <button class="menu-toggle" aria-label="Open menu">☰</button>
       </div>
     </div>
   </header>
@@ -68,8 +71,7 @@
             Stress And Creativity Type
           </h2>
           <p class="quiz-desc">
-            3-minute quiz to identify your stress & creativity profiles. Get a
-            tailored guide in your inbox.
+            3-minute quiz to identify your stress & creativity profiles. Get a tailored guide in your inbox.
           </p>
           <a href="#" class="btn btn-primary quiz-cta">Take the Quiz</a>
         </div>
@@ -84,82 +86,48 @@
       <div class="container">
         <h2 class="products-title">Handmade Décor For Inspired Living.</h2>
         <p class="products-lead">
-          Discover timeless pieces that add warmth, color, and character to
-          your home. Thoughtfully crafted and made to last.
+          Discover timeless pieces that add warmth, color, and character to your home. Thoughtfully crafted, made to last, and
+          designed to make your everyday moments beautiful.
         </p>
 
-        <div class="product-grid" aria-live="polite">
-          <article class="product-card">
-            <div class="product-image">
-              <img src="./assets/product_pic_1.png" alt="Ink Plates" />
-            </div>
-            <div class="product-meta">
-              <div class="product-name">Ink Plates</div>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-image">
-              <img src="./assets/product_pic_2.png" alt="Mosaic Cup Holders" />
-            </div>
-            <div class="product-meta">
-              <div class="product-name">Mosaic Cup Holders</div>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-image">
-              <img src="./assets/product_pic_3.png" alt="Mosaic Plates" />
-            </div>
-            <div class="product-meta">
-              <div class="product-name">Mosaic Plates</div>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-image">
-              <img src="./assets/product_pic_4.png" alt="Season Cups" />
-            </div>
-            <div class="product-meta">
-              <div class="product-name">Season Cups</div>
-            </div>
-          </article>
+        <div class="product-grid" aria-live="polite" id="product-grid">
+          <!-- Product cards will be generated here -->
         </div>
-
+        
         <div style="text-align: center; margin-top: 28px">
           <a class="btn btn-secondary explore-btn" href="#">Explore Products</a>
         </div>
-      </div>
-    </section>
-
-    <!-- Workshops section (inserted before Why Choose) -->
-    <section class="workshops" id="workshops">
-      <div class="container quiz-inner">
-        <div class="quiz-content">
-          <h2 class="quiz-title">Workshops That Build More Than Skills.</h2>
-          <p class="quiz-desc">
-            Our corporate workshops use craft as a tool for wellness, stress
-            relief, and collaboration. Whether in the office or virtually, we
-            help teams slow down, connect, and create together.
-          </p>
-          <a class="btn btn-secondary" href="#workshops">Explore Workshops</a>
         </div>
-
-        <div class="quiz-image">
-          <img src="./assets/workshop_page_pic.png" alt="Workshop group" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Why choose section -->
-    <section class="why" id="why">
-      <div class="container">
-        <h2 class="why-title">Why Choose Insy's</h2>
-
-        <div class="why-grid" role="list">
-          <div class="why-item" role="listitem">
-            <img src="./assets/hand_made_icon.png" alt="Handmade & sustainable practices" class="why-icon" />
-            <div class="why-name">Handmade & sustainable practices</div>
+        </section>
+        
+        <!-- Workshops section (inserted before Why Choose) -->
+        <section class="workshops" id="workshops">
+          <div class="container quiz-inner">
+            <div class="quiz-content">
+              <h2 class="quiz-title">Workshops that Build More Than Skills.</h2>
+              <p class="quiz-desc">
+                  Our corporate workshops use craft as a tool for wellness, stress relief, and collaboration. Whether in the
+                  office or
+                  virtually, we help teams slow down, connect, and create together.
+                  </p>
+                  <a class="btn btn-secondary explore-btn" href="#workshops">Explore Workshops</a>
+                  </div>
+                  
+                  <div class="quiz-image">
+                    <img src="./assets/workshop_page_pic.png" alt="Workshop group" />
+                  </div>
+                  </div>
+                  </section>
+                  
+                  <!-- Why choose section -->
+                  <section class="why" id="why">
+                    <div class="container">
+                      <h2 class="why-title">Why Choose Insy's</h2>
+                  
+                      <div class="why-grid" role="list">
+                        <div class="why-item" role="listitem">
+                          <img src="./assets/hand_made_icon.png" alt="Handmade & sustainable practices" class="why-icon" />
+                          <div class="why-name">Handmade & sustainable practices</div>
           </div>
 
           <div class="why-item" role="listitem">

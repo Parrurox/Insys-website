@@ -4,15 +4,23 @@ document.addEventListener("DOMContentLoaded", function () {
   const nav = document.querySelector(".main-nav");
 
   if (menuToggle) {
+    // accessibility state
+    menuToggle.setAttribute("aria-expanded", "false");
+
     menuToggle.addEventListener("click", () => {
-      if (nav.style.display === "flex") {
-        nav.style.display = "";
-        menuToggle.textContent = "☰";
-      } else {
-        nav.style.display = "flex";
-        nav.style.flexDirection = "column";
-        nav.style.gap = "12px";
-        menuToggle.textContent = "✕";
+      const opened = nav.classList.toggle("is-open");
+      menuToggle.textContent = opened ? "✕" : "☰";
+      menuToggle.setAttribute("aria-expanded", String(opened));
+    });
+
+    // close mobile menu when resizing to desktop
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 900) {
+        if (nav.classList.contains("is-open")) {
+          nav.classList.remove("is-open");
+          menuToggle.textContent = "☰";
+          menuToggle.setAttribute("aria-expanded", "false");
+        }
       }
     });
   }
@@ -161,4 +169,48 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".world-tab.is-active") ||
     document.querySelector('.world-tab[data-tab="posts"]');
   if (active) renderWorld(active.dataset.tab || "posts");
+
+  // Product data
+  const productData = [
+    {
+      image: "./assets/product_pic_1.png",
+      name: "Ink Plates",
+      alt: "Ink Plates",
+    },
+    {
+      image: "./assets/product_pic_2.png",
+      name: "Mosaic Cup Holders",
+      alt: "Mosaic Cup Holders",
+    },
+    {
+      image: "./assets/product_pic_3.png",
+      name: "Mosaic Plates",
+      alt: "Mosaic Plates",
+    },
+    {
+      image: "./assets/product_pic_4.png",
+      name: "Season Cups",
+      alt: "Season Cups",
+    },
+  ];
+
+  // Function to generate product cards
+  function createProductCard(product) {
+    return `
+      <article class="product-card">
+        <div class="product-image">
+          <img src="${product.image}" alt="${product.alt}" />
+        </div>
+        <div class="product-meta">
+          <div class="product-name">${product.name}</div>
+        </div>
+      </article>
+    `;
+  }
+
+  // Render product cards
+  const productGrid = document.getElementById("product-grid");
+  if (productGrid) {
+    productGrid.innerHTML = productData.map(createProductCard).join("");
+  }
 });
