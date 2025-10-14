@@ -333,6 +333,12 @@ body {
   padding: 10px 16px;
   font-weight: 600;
   text-decoration: none;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.explore-btn:hover {
+  background: #f97316;
+  color: #fff;
 }
 
 /* Why Choose section */
@@ -698,6 +704,203 @@ body {
 }
 
 
+
+/* ~~~~~~~~~~~~~~~~~Workshop page specific styles~~~~~~~~~~~ */
+
+.workshop-page {
+  padding: 64px 0;
+  background: #fff;
+}
+
+.workshop-inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.workshop-content {
+  text-align: left;
+  max-width: 640px;
+}
+
+.workshop-eyebrow {
+  color: #f97316;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.workshop-hero-title {
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
+  line-height: 1;
+  margin: 0 0 14px;
+  color: #2f2a25;
+}
+
+.workshop-script {
+  display: block;
+  font-family: "Amsterdam", "Great Vibes", cursive;
+  font-size: 48px;
+  margin-top: 55px;
+  color: #ff48b0;
+}
+
+.workshop-desc {
+  color: #374151;
+  font-size: 18px;
+  max-width: 560px;
+  margin-top: 18px;
+  margin-bottom: 28px;
+}
+
+.workshop-cta {
+  padding: 12px 20px;
+  display: inline-block;
+}
+
+.workshop-image {
+  max-width: 640px;
+  flex: 1 1 40%;
+}
+
+.workshop-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  display: block;
+}
+
+/* ===== Popular/Workshop Formats styling ===== */
+.workshop-formats {
+  padding: 56px 0 80px;
+  background: #fff6f4;
+  /* subtle warm background like the page */
+}
+
+.formats-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.formats-title {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  color: #332a25;
+  /* rich brown similar to heading in image */
+  margin: 0 0 28px;
+  font-weight: 700;
+}
+
+/* 2x2 teal cards layout with generous gaps */
+.formats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  align-items: stretch;
+  margin-bottom: 20px;
+}
+
+/* card look */
+.format-card {
+  background: #16a9a7;
+  /* teal */
+  color: #ffffff;
+  padding: 28px 30px;
+  text-align: left;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: none;
+  border-radius: 2px;
+}
+
+/* keep heading compact like the design */
+.format-heading {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+/* description smaller, slightly muted white */
+.format-desc {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.5;
+  max-width: 520px;
+}
+
+/* CTA centered below grid */
+.formats-cta {
+  display: inline-block;
+  margin-top: 14px;
+  background: #f97316;
+  /* orange CTA */
+  color: #fff;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 2px;
+  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.12);
+}
+
+
+/* =========Ebook CTA =================== */
+.ebook-cta {
+  background: #f9efed;
+  /* soft warm pink */
+  padding: 64px 0;
+}
+
+.ebook-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 520px;
+  gap: 40px;
+  align-items: center;
+}
+
+.ebook-copy {
+  text-align: left;
+}
+
+.ebook-title {
+  font-family: "Playfair Display", serif;
+  font-size: 56px;
+  line-height: 1.02;
+  color: #332a25;
+  margin: 0 0 18px;
+  font-weight: 700;
+}
+
+.ebook-desc {
+  color: #4b5563;
+  font-size: 16px;
+  max-width: 560px;
+  margin-bottom: 22px;
+}
+
+
+
+
+.ebook-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+
 /*==================== responsive ness==============*/
 @media (max-width: 1100px) {
   .product-grid {
@@ -841,6 +1044,26 @@ body {
     /* reduced from 280 */
   }
 
+  .ebook-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .ebook-copy {
+    margin-bottom: 18px;
+  }
+
+  .ebook-title {
+    font-size: 40px;
+  }
+
+  .formats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .formats-title {
+    font-size: 34px;
+  }
 }
 
 @media (max-width: 780px) {
@@ -880,6 +1103,27 @@ body {
 
 
 @media (max-width: 640px) {
+
+  .formats-inner {
+    padding: 0 12px;
+  }
+
+  .formats-title {
+    font-size: 28px;
+  }
+
+  .format-card {
+    padding: 22px;
+  }
+
+  .format-heading {
+    font-size: 14px;
+  }
+
+  .format-desc {
+    font-size: 13px;
+  }
+
   .product-grid {
     grid-template-columns: 1fr;
   }
@@ -920,72 +1164,4 @@ body {
     height: 200px;
     /* reduced from 220 */
   }
-}
-
-/* ~~~~~~~~~~~~~~~~~Workshop page specific styles~~~~~~~~~~~ */
-
-.workshop-page {
-  padding: 64px 0;
-  background: #fff;
-}
-
-.workshop-inner {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.workshop-content {
-  text-align: left;
-  max-width: 640px;
-}
-
-.workshop-eyebrow {
-  color: #f97316;
-  font-weight: 600;
-  margin-bottom: 12px;
-}
-
-.workshop-hero-title {
-  font-family: "Playfair Display", serif;
-  font-size: 64px;
-  line-height: 1;
-  margin: 0 0 14px;
-  color: #2f2a25;
-}
-
-.workshop-script {
-  display: block;
-  font-family: "Amsterdam", "Great Vibes", cursive;
-  font-size: 48px;
-  margin-top: 55px;
-  color: #ff48b0;
-}
-
-.workshop-desc {
-  color: #374151;
-  font-size: 18px;
-  max-width: 560px;
-  margin-top: 18px;
-  margin-bottom: 28px;
-}
-
-.workshop-cta {
-  padding: 12px 20px;
-  display: inline-block;
-}
-
-.workshop-image {
-  max-width: 640px;
-  flex: 1 1 40%;
-}
-
-.workshop-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  display: block;
 }
