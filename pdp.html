@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mosaic Cup Holders — Insy's Artistry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&family=Great+Vibes&family=Inria+Serif:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo-menu-section">
+                <button class="menu-toggle" aria-label="Open menu"><img src="./assets/mobile_menu.png"
+                        alt="menu"></button>
+                <div class="brand">
+                    <a href="index.html">
+                        <img src="./assets/insy_logo.png" alt="Insy's Artistry logo" class="logo" />
+                    </a>
+                </div>
+            </div>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn" aria-label="Search"><img src="./assets/search_icon.png" alt="search_icon"
+                        height="24px" width="24px"></button>
+                <button class="icon-btn" aria-label="Account"><img src="./assets/user_icon.png" alt="user_icon"
+                        height="24px" width="24px"></button>
+                <button class="icon-btn" aria-label="Cart"><img src="./assets/shopping_icon.png" alt="cart_icon"
+                        height="24px" width="24px"></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Breadcrumb -->
+        <section class="pdp-breadcrumb">
+            <div class="container">
+                <a href="products.html" class="breadcrumb-link">Handmade Décor</a>
+                <span class="breadcrumb-separator">/</span>
+                <span class="breadcrumb-current">Ink Plates</span>
+            </div>
+        </section>
+
+        <!-- Product Detail Section -->
+        <section class="pdp-hero">
+            <div class="container pdp-hero-inner">
+                <!-- Product Image -->
+                <div class="pdp-image-section">
+                    <div class="pdp-main-image">
+                        <img src="./assets/product_pic_1.png" alt="Ink plates" />
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="pdp-content">
+                    <h1 class="pdp-title">Ink Plates</h1>
+                    <div class="pdp-price">AED 20.99</div>
+
+                    <!-- Product Description Teaser -->
+                    <p class="pdp-description">
+                        Bring a pop of color and creativity to your table with these handcrafted Mosaic Cup Holders.
+                        Each piece is uniquely designed with terrazzo and marble-inspired patterns, making them both
+                        functional and stylish.
+                    </p>
+                    <a href="#full-description" class="pdp-read-more">Read more…</a>
+
+                    <!-- Color Selection -->
+                    <div class="pdp-color-section">
+                        <h3 class="pdp-section-title">Color</h3>
+                        <div class="color-options">
+                            <label class="color-option">
+                                <input type="radio" name="color" value="tan" />
+                                <span class="color-swatch" style="background-color: #C4A97D;"></span>
+                            </label>
+                            <label class="color-option">
+                                <input type="radio" name="color" value="gray" />
+                                <span class="color-swatch" style="background-color: #B8B8B8;"></span>
+                            </label>
+                            <label class="color-option">
+                                <input type="radio" name="color" value="blue" checked />
+                                <span class="color-swatch" style="background-color: #4A5FBF;"></span>
+                            </label>
+                        </div>
+                        <p class="color-name">Blue</p>
+                    </div>
+
+                    <!-- Quantity & Add to Cart -->
+                    <div class="pdp-actions">
+                        <div class="quantity-selector">
+                            <button class="qty-btn" aria-label="Decrease quantity">−</button>
+                            <input type="number" class="qty-input" value="1" min="1" />
+                            <button class="qty-btn" aria-label="Increase quantity">+</button>
+                        </div>
+                        <button class="btn btn-primary pdp-add-to-cart">Add to cart</button>
+                    </div>
+
+                    <!-- Trust Signals -->
+                    <div class="pdp-trust-signals">
+                        <button class="pdp-wishlist">
+                            <span class="heart-icon">♡</span> Add to wishlist
+                        </button>
+                        <div class="pdp-guarantee">
+                            <span class="checkmark">✓</span> 30 days money back guarantee
+                        </div>
+                    </div>
+                    <!-- Full Product Description -->
+                    <div class="pdp-full-description" id="full-description">
+                        <div class="container">
+                            <h2 class="pdp-desc-title">Product Description</h2>
+                            <ul class="pdp-features">
+                                <li>
+                                    <strong>Handmade & Unique</strong> – No two pieces are alike, giving your set a truly
+                                    one-of-a-kind charm.
+                                </li>
+                                <li>
+                                    <strong>Durable & Practical</strong> – Made with high-quality, eco-friendly materials that
+                                    protect surfaces from heat and moisture.
+                                </li>
+                                <li>
+                                    <strong>Versatile Use</strong> – Perfect for coffee cups, tea mugs, or even as small décor
+                                    accents around the home.
+                                </li>
+                                <li>
+                                    <strong>Artful Design</strong> – Blends bold colors with modern patterns to elevate your dining
+                                    or workspace.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-bg" aria-hidden="true"></div>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="./assets/insy_logo.png" alt="Insy's Artistry logo" class="footer-logo" />
+                <p class="footer-copy">© All Rights Reserved 2025</p>
+            </div>
+
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h3 class="footer-heading">Main</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#hero">Home</a></li>
+                        <li><a href="products.html">Shop Home Décor</a></li>
+                        <li><a href="index.html#workshops">Corporate Workshops</a></li>
+                        <li><a href="index.html#why">About Us</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">Legal Policies</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">Refund &amp; Cancellation Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">Social Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

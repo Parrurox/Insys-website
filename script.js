@@ -1,3 +1,109 @@
+// Product data
+const productData = [
+  {
+    image: "./assets/product_pic_1.png",
+    name: "Ink Plates",
+    alt: "Ink Plates",
+  },
+  {
+    image: "./assets/product_pic_2.png",
+    name: "Mosaic Cup Holders",
+    alt: "Mosaic Cup Holders",
+  },
+  {
+    image: "./assets/product_pic_3.png",
+    name: "Mosaic Plates",
+    alt: "Mosaic Plates",
+  },
+  {
+    image: "./assets/product_pic_4.png",
+    name: "Season Cups",
+    alt: "Season Cups",
+  },
+];
+
+// World tabs: populate placeholder images and toggle views
+const worldData = {
+  posts: [
+    {
+      img: "./assets/hero.png",
+      href: "https://instagram.com/insys_artistry",
+    },
+    {
+      img: "./assets/quiz_page_pic.png",
+      href: "https://instagram.com/insys_artistry",
+    },
+    {
+      img: "./assets/workshop_page_pic.png",
+      href: "https://instagram.com/insys_artistry",
+    },
+    {
+      img: "./assets/product_pic_1.png",
+      href: "https://instagram.com/insys_artistry",
+    },
+    {
+      img: "./assets/product_pic_2.png",
+      href: "https://instagram.com/insys_artistry",
+    },
+    {
+      img: "./assets/product_pic_3.png",
+      href: "https://instagram.com/insys_artistry",
+    },
+  ],
+  reels: [
+    {
+      img: "./assets/product_pic_4.png",
+      href: "https://instagram.com/insys_artistry",
+    },
+    {
+      img: "./assets/craft_section_pic.png",
+      href: "https://instagram.com/insys_artistry",
+    },
+    {
+      img: "./assets/hero.png",
+      href: "https://instagram.com/insys_artistry",
+    },
+    {
+      img: "./assets/workshop_page_pic.png",
+      href: "https://instagram.com/insys_artistry",
+    },
+    {
+      img: "./assets/quiz_page_pic.png",
+      href: "https://instagram.com/insys_artistry",
+    },
+    {
+      img: "./assets/product_pic_1.png",
+      href: "https://instagram.com/insys_artistry",
+    },
+  ],
+  tagged: [
+    {
+      img: "./assets/product_pic_2.png",
+      href: "https://instagram.com/insys_artistry",
+    },
+    {
+      img: "./assets/product_pic_3.png",
+      href: "https://instagram.com/insys_artistry",
+    },
+    {
+      img: "./assets/product_pic_4.png",
+      href: "https://instagram.com/insys_artistry",
+    },
+    {
+      img: "./assets/insy_logo.png",
+      href: "https://instagram.com/insys_artistry",
+    },
+    {
+      img: "./assets/trust_icon.png",
+      href: "https://instagram.com/insys_artistry",
+    },
+    {
+      img: "./assets/puzzle_icon.png",
+      href: "https://instagram.com/insys_artistry",
+    },
+  ],
+};
+
 // Mobile menu toggle (simple)
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector(".menu-toggle");
@@ -38,88 +144,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-
-  // World tabs: populate placeholder images and toggle views
-  const worldData = {
-    posts: [
-      {
-        img: "./assets/hero.png",
-        href: "https://instagram.com/insys_artistry",
-      },
-      {
-        img: "./assets/quiz_page_pic.png",
-        href: "https://instagram.com/insys_artistry",
-      },
-      {
-        img: "./assets/workshop_page_pic.png",
-        href: "https://instagram.com/insys_artistry",
-      },
-      {
-        img: "./assets/product_pic_1.png",
-        href: "https://instagram.com/insys_artistry",
-      },
-      {
-        img: "./assets/product_pic_2.png",
-        href: "https://instagram.com/insys_artistry",
-      },
-      {
-        img: "./assets/product_pic_3.png",
-        href: "https://instagram.com/insys_artistry",
-      },
-    ],
-    reels: [
-      {
-        img: "./assets/product_pic_4.png",
-        href: "https://instagram.com/insys_artistry",
-      },
-      {
-        img: "./assets/craft_section_pic.png",
-        href: "https://instagram.com/insys_artistry",
-      },
-      {
-        img: "./assets/hero.png",
-        href: "https://instagram.com/insys_artistry",
-      },
-      {
-        img: "./assets/workshop_page_pic.png",
-        href: "https://instagram.com/insys_artistry",
-      },
-      {
-        img: "./assets/quiz_page_pic.png",
-        href: "https://instagram.com/insys_artistry",
-      },
-      {
-        img: "./assets/product_pic_1.png",
-        href: "https://instagram.com/insys_artistry",
-      },
-    ],
-    tagged: [
-      {
-        img: "./assets/product_pic_2.png",
-        href: "https://instagram.com/insys_artistry",
-      },
-      {
-        img: "./assets/product_pic_3.png",
-        href: "https://instagram.com/insys_artistry",
-      },
-      {
-        img: "./assets/product_pic_4.png",
-        href: "https://instagram.com/insys_artistry",
-      },
-      {
-        img: "./assets/insy_logo.png",
-        href: "https://instagram.com/insys_artistry",
-      },
-      {
-        img: "./assets/trust_icon.png",
-        href: "https://instagram.com/insys_artistry",
-      },
-      {
-        img: "./assets/puzzle_icon.png",
-        href: "https://instagram.com/insys_artistry",
-      },
-    ],
-  };
 
   const gridEl = document.getElementById("world-grid");
   const tabButtons = document.querySelectorAll(".world-tab");
@@ -169,30 +193,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".world-tab.is-active") ||
     document.querySelector('.world-tab[data-tab="posts"]');
   if (active) renderWorld(active.dataset.tab || "posts");
-
-  // Product data
-  const productData = [
-    {
-      image: "./assets/product_pic_1.png",
-      name: "Ink Plates",
-      alt: "Ink Plates",
-    },
-    {
-      image: "./assets/product_pic_2.png",
-      name: "Mosaic Cup Holders",
-      alt: "Mosaic Cup Holders",
-    },
-    {
-      image: "./assets/product_pic_3.png",
-      name: "Mosaic Plates",
-      alt: "Mosaic Plates",
-    },
-    {
-      image: "./assets/product_pic_4.png",
-      name: "Season Cups",
-      alt: "Season Cups",
-    },
-  ];
 
   // Function to generate product cards
   function createProductCard(product) {
