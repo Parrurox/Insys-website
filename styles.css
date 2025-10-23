@@ -29,9 +29,9 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 /* Header */
@@ -110,7 +110,7 @@ body {
   position: absolute;
   inset: 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.35)),
-    url("./assets/hero.png");
+    url("./assets/hero.webp");
   background-size: cover;
   background-position: center;
   height: 560px;
@@ -445,7 +445,7 @@ body {
   position: absolute;
   inset: 0;
   background: linear-gradient(90deg, rgba(24, 15, 12, 0.72), rgba(24, 15, 12, 0.32)),
-    url("./assets/craft_section_pic.png") center/cover no-repeat;
+    url("./assets/craft_section_pic.webp") center/cover no-repeat;
 }
 
 .craft-cta-inner {
@@ -498,8 +498,8 @@ body {
   color: #1f2937;
   padding-top: 36px;
   padding-bottom: 56px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
@@ -509,11 +509,7 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   gap: 300px;
-  max-width: 1200px;
   margin: 0 auto;
-
-
-
 }
 
 .footer-brand {
@@ -542,6 +538,7 @@ body {
   gap: 80px;
   flex: 1;
   justify-content: center;
+  margin-left: 100px;
 }
 
 .footer-col {
@@ -1180,7 +1177,7 @@ body {
 .pdp-main-image {
   width: 100%;
   aspect-ratio: 1;
-  border: 3px solid #0ea5e9;
+  border: 1px transparent;
   border-radius: 8px;
   overflow: hidden;
   background: #f3f3f3;
@@ -1221,6 +1218,8 @@ body {
 }
 
 .pdp-description {
+  padding-top: 12px;
+  border-top: 1px solid #e5e7eb;
   color: #4b5563;
   font-size: 16px;
   line-height: 1.6;
@@ -1243,6 +1242,10 @@ body {
 .pdp-color-section {
   padding-top: 12px;
   border-top: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 0px;
 }
 
 .pdp-section-title {
@@ -1254,8 +1257,8 @@ body {
 
 .color-options {
   display: flex;
+  justify-content: end;
   gap: 16px;
-  margin-bottom: 10px;
 }
 
 .color-option {
@@ -1271,8 +1274,8 @@ body {
 
 .color-swatch {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 3px solid transparent;
   transition: all 160ms ease;
@@ -1300,15 +1303,15 @@ body {
 }
 
 .quantity-selector {
+  background-color: #F2F4F7;
   display: flex;
   align-items: center;
   border: 1px solid #e5e7eb;
-  border-radius: 4px;
+  border-radius: 20px;
   overflow: hidden;
 }
 
 .qty-btn {
-  background: transparent;
   border: none;
   width: 36px;
   height: 36px;
@@ -1332,6 +1335,7 @@ body {
   font-size: 16px;
   font-weight: 600;
   color: #1f2937;
+  background: #F2F4F7;
 }
 
 .qty-input:focus {
@@ -1343,6 +1347,7 @@ body {
   padding: 12px 20px;
   font-size: 16px;
   font-weight: 600;
+  border: none;
 }
 
 /* Trust Signals */
@@ -1351,7 +1356,6 @@ body {
   gap: 32px;
   align-items: center;
   padding-top: 12px;
-  border-top: 1px solid #e5e7eb;
 }
 
 .pdp-wishlist {
@@ -1392,8 +1396,7 @@ body {
 /* Full Description Section */
 .pdp-full-description {
   background: #fff;
-  padding: 56px 0;
-  border-top: 1px solid #e5e7eb;
+  padding: 48px 0;
 }
 
 .pdp-desc-title {
@@ -1408,8 +1411,8 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 24px;
 }
 
@@ -1424,9 +1427,96 @@ body {
   font-weight: 600;
 }
 
+.pdp-related-products {
+  background: #fff;
+  padding: 48px 0;
+}
+
+.pdp-section-heading {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f2937;
+  text-align: start;
+  margin: 0 0 40px;
+}
+
+.related-products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.related-products-grid .product-card {
+  background: #fff7f5;
+  padding: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.related-products-grid .product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
+}
+
+.related-products-grid .product-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 0;
+  background: #f3e8e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.related-products-grid .product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 220ms ease;
+}
+
+.related-products-grid .product-card:hover .product-image img {
+  transform: scale(1.05);
+}
+
+.related-products-grid .product-info {
+  padding: 16px 14px;
+  text-align: center;
+}
+
+.related-products-grid .product-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+  line-height: 1.4;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~media queries~~~~~~~~~~~~~~~~~~~ */
 
 @media (max-width: 1100px) {
+
+  .related-products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .pdp-section-heading {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+
   .product-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 14px;
@@ -1434,6 +1524,25 @@ body {
 }
 
 @media (max-width: 900px) {
+
+  .pdp-related-products {
+    padding: 48px 0;
+  }
+
+  .related-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .pdp-section-heading {
+    font-size: 26px;
+  }
+
+  .related-products-grid .product-name {
+    font-size: 14px;
+  }
+
+
   .pdp-hero-inner {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -1664,6 +1773,28 @@ body {
 
 @media (max-width: 640px) {
 
+  .pdp-related-products {
+    padding: 40px 0;
+  }
+
+  .related-products-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .pdp-section-heading {
+    font-size: 22px;
+    margin-bottom: 24px;
+  }
+
+  .related-products-grid .product-info {
+    padding: 14px 12px;
+  }
+
+  .related-products-grid .product-name {
+    font-size: 13px;
+  }
+
   .pdp-hero {
     padding: 24px 0;
   }
@@ -1746,6 +1877,16 @@ body {
 
 
 @media (max-width: 540px) {
+
+  .pdp-section-heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .related-products-grid .product-card {
+    border-radius: 4px;
+  }
+
   .world-grid {
     grid-template-columns: 1fr;
   }

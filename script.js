@@ -1,22 +1,22 @@
 // Product data
 const productData = [
   {
-    image: "./assets/product_pic_1.png",
+    image: "./assets/product_pic_1.webp",
     name: "Ink Plates",
     alt: "Ink Plates",
   },
   {
-    image: "./assets/product_pic_2.png",
+    image: "./assets/product_pic_2.webp",
     name: "Mosaic Cup Holders",
     alt: "Mosaic Cup Holders",
   },
   {
-    image: "./assets/product_pic_3.png",
+    image: "./assets/product_pic_3.webp",
     name: "Mosaic Plates",
     alt: "Mosaic Plates",
   },
   {
-    image: "./assets/product_pic_4.png",
+    image: "./assets/product_pic_4.webp",
     name: "Season Cups",
     alt: "Season Cups",
   },
@@ -26,79 +26,79 @@ const productData = [
 const worldData = {
   posts: [
     {
-      img: "./assets/hero.png",
+      img: "./assets/hero.webp",
       href: "https://instagram.com/insys_artistry",
     },
     {
-      img: "./assets/quiz_page_pic.png",
+      img: "./assets/quiz_page_pic.webp",
       href: "https://instagram.com/insys_artistry",
     },
     {
-      img: "./assets/workshop_page_pic.png",
+      img: "./assets/workshop_page_pic.webp",
       href: "https://instagram.com/insys_artistry",
     },
     {
-      img: "./assets/product_pic_1.png",
+      img: "./assets/product_pic_1.webp",
       href: "https://instagram.com/insys_artistry",
     },
     {
-      img: "./assets/product_pic_2.png",
+      img: "./assets/product_pic_2.webp",
       href: "https://instagram.com/insys_artistry",
     },
     {
-      img: "./assets/product_pic_3.png",
+      img: "./assets/product_pic_3.webp",
       href: "https://instagram.com/insys_artistry",
     },
   ],
   reels: [
     {
-      img: "./assets/product_pic_4.png",
+      img: "./assets/product_pic_4.webp",
       href: "https://instagram.com/insys_artistry",
     },
     {
-      img: "./assets/craft_section_pic.png",
+      img: "./assets/craft_section_pic.webp",
       href: "https://instagram.com/insys_artistry",
     },
     {
-      img: "./assets/hero.png",
+      img: "./assets/hero.webp",
       href: "https://instagram.com/insys_artistry",
     },
     {
-      img: "./assets/workshop_page_pic.png",
+      img: "./assets/workshop_page_pic.webp",
       href: "https://instagram.com/insys_artistry",
     },
     {
-      img: "./assets/quiz_page_pic.png",
+      img: "./assets/quiz_page_pic.webp",
       href: "https://instagram.com/insys_artistry",
     },
     {
-      img: "./assets/product_pic_1.png",
+      img: "./assets/product_pic_1.webp",
       href: "https://instagram.com/insys_artistry",
     },
   ],
   tagged: [
     {
-      img: "./assets/product_pic_2.png",
+      img: "./assets/product_pic_2.webp",
       href: "https://instagram.com/insys_artistry",
     },
     {
-      img: "./assets/product_pic_3.png",
+      img: "./assets/product_pic_3.webp",
       href: "https://instagram.com/insys_artistry",
     },
     {
-      img: "./assets/product_pic_4.png",
+      img: "./assets/product_pic_4.webp",
       href: "https://instagram.com/insys_artistry",
     },
     {
-      img: "./assets/insy_logo.png",
+      img: "./assets/insy_logo.webp",
       href: "https://instagram.com/insys_artistry",
     },
     {
-      img: "./assets/trust_icon.png",
+      img: "./assets/trust_icon.webp",
       href: "https://instagram.com/insys_artistry",
     },
     {
-      img: "./assets/puzzle_icon.png",
+      img: "./assets/puzzle_icon.webp",
       href: "https://instagram.com/insys_artistry",
     },
   ],
